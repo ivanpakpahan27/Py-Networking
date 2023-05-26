@@ -45,7 +45,7 @@ while True:
             # Receive our "header" containing username length, it's size is defined and constant
             username_header = client_socket.recv(HEADER_LENGTH)
 
-            # If we received no data, server gracefully closed a connection, for example using socket.close() or socket.shutdown(socket.SHUT_RDWR)
+            # If we received no data, server gr                                                                                         acefully closed a connection, for example using socket.close() or socket.shutdown(socket.SHUT_RDWR)
             if not len(username_header):
                 print('Connection closed by the server')
                 sys.exit()
